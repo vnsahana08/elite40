@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$bg-color:purple;
+
+@mixin anchor-code($col:blue){
+    color:blue;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.container{
+    .content{
+        background-color: $bg-color;
+        .main{
+            .change{
+                p{
+                    color: red;
+                    text-decoration: lowercase;
+                }
+                a{
+                    color:aqua;
+                }
+            }
+        }
+    }
+.main{
+    background-color: $bg-color;
+    .ul{
+        .li{
+            .a{
+                color:red;
+                text-decoration: none;
+            }
+        }
+    }
+}
+    .change{
+        p{
+            text-decoration: none;
+            text-transform: lowercase;
+            background-color: $bg-color;
+            color:green;
+        }
+    }
+}
